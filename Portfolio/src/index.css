@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+--accent: #0ea5a4; /* teal-500 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Example dark mode background */
+body {
+  @apply bg-black text-white;
+}
+/* small helpers */
+.btn{
+@apply inline-flex items-center gap-2 px-4 py-2 rounded-md font-medium shadow-sm;
+}
+
+
+.card{
+@apply bg-white rounded-2xl p-6 shadow-lg;
+}
+
+.clip-hexagon {
+  clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+}
